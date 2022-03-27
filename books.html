@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html data-lt-installed="true" lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Незнайка Библиотека</title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" href="/">Незнайка</a>
+            <!-- <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                    data-target=".navbar-collapse" data-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="/">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./news.html">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./notes.html">Заметки учителей</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./books.html">Библиотека</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="./privacy.html">Конфиденциальность</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container">
+    <main class="pb-3" role="main">
+        <h1>Библиотека</h1>
+
+        <div class="row">
+            <div class="col">
+                <a class="btn btn-primary m-3" href="/Books/Create" role="button">Добавить книгу</a>
+            </div>
+            <div class="col">
+                <form>
+                    <input class="form-control m-3" placeholder="Поиск по книгам и возможно по описаниям книг"
+                           type="text">
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 ">
+            <!--Далее идут примеры "карт" с книгами-->
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://img3.labirint.ru/rc/7de3b62433d1ed10f92fa01de05d0106/220x340/books24/230467/cover.jpg?1563594873"
+                                 style="object-fit: contain; height: 300px;">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Хрестоматия 3-4 классы</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque est justo, iaculis ut
+                            efficitur eu, bibendum vel risus. Fusce faucibus felis ornare
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+            <!--конец первого примера-->
+
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://s1.livelib.ru/boocover/1000732319/o/de51/L._N._Tolstoj__Vojna_i_mir._V_dvuh_knigah._Kniga_2._Tom_34.jpeg"
+                                 style="object-fit: contain; height: 300px;">
+                        </div>
+                    </div>
+                    <div class="card-body" style="max-height: 200px; overflow: hidden">
+                        <h5 class="card-title">Вонйа и Мир - Лев Толстой</h5>
+                        <p class="card-text">
+                            Нужно сделать так, чтобы только какая-то часть описания книги входил в превью книги здесь
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://img3.labirint.ru/rc/c764dc79816b3b680d5e4fbc56706ca7/220x340/books42/419735/cover.jpg?1563737926"
+                                 style="object-fit: contain; height: 300px">
+                        </div>
+                    </div>
+                    <div class="card-body " style="max-height: 200px; overflow: hidden">
+                        <h5 class="card-title">1984 - Джордж Оруэлл</h5>
+                        <p class="card-text">
+                            Здесь должно частично показываться начало описания, все описание будет видно со страницы
+                            самой книги...
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://img3.labirint.ru/rc/7de3b62433d1ed10f92fa01de05d0106/220x340/books24/230467/cover.jpg?1563594873"
+                                 style="object-fit: contain; height: 300px;">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Хрестоматия 3-4 классы</h5>
+                        <p class="card-text">
+                            Здесь должно частично показываться начало описания, все описание будет видно со страницы
+                            самой книги...
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://s1.livelib.ru/boocover/1000732319/o/de51/L._N._Tolstoj__Vojna_i_mir._V_dvuh_knigah._Kniga_2._Tom_34.jpeg"
+                                 style="object-fit: contain; height: 300px;">
+                        </div>
+                    </div>
+                    <div class="card-body" style="max-height: 200px; overflow: hidden">
+                        <h5 class="card-title">Вонйа и Мир - Лев Толстой</h5>
+                        <p class="card-text">
+                            Причем описание на превью книги дожно быть одиноковой длины,
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card">
+                    <div class="container">
+                        <div class="px-0">
+                            <img alt="Нет изображения этой книги" class="card-img-top"
+                                 src="https://img3.labirint.ru/rc/c764dc79816b3b680d5e4fbc56706ca7/220x340/books42/419735/cover.jpg?1563737926"
+                                 style="object-fit: contain; height: 300px">
+                        </div>
+                    </div>
+                    <div class="card-body" style="max-height: 200px; overflow: hidden">
+                        <h5 class="card-title">1984 - Джордж Оруэлл</h5>
+                        <p class="card-text">
+                            Здесь должно частично показываться начало описания, все описание будет видно со страницы
+                            самой книги...
+                        </p>
+                        <a class="stretched-link" href="/Books/Details/{номер книги}"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+</div>
+
+<footer class="border-top footer text-muted" style="line-height: 60px">
+    <div class="container">
+        © 2022 - Dunno - <a href="/Home/Privacy">Privacy</a>
+    </div>
+</footer>
+
+
+<script crossorigin="anonymous"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+>
+
+
+</body>
+</html>
